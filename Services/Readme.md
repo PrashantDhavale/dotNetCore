@@ -65,14 +65,17 @@
                     .MinimumLevel.Verbose()
                     .CreateLogger();
 
-    >>  You can download Elasticsearch from https://www.elastic.co/downloads/elasticsearch follow 
-        the setup instructions and start Elasticsearch service locally.
+    >>  You can download Elasticsearch from https://www.elastic.co/downloads/elasticsearch
+        Follow the setup instructions and start Elasticsearch service locally.
 
-        Once you execute bin\elasticsearch.bat, Elasticsearch service will be available on http://localhost:9200/
+        Elasticsearch service will be available on http://localhost:9200/
+        
     >>  You can now execute the OBDSim service API's using swagger or postman or just the browser
-        http://localhost:5000/api/OBDSim/GetOBDSimsByEmployeeID/{employeeId}
+        http://localhost:5000/api/OBDSim/GetOBDSimsByEmployeeID/1234
 
-    >>  Use a new browser tab to view elasticsearch log entries using http://localhost:9200/logstash-index-2016.08/_search
+    >>  Use a new browser tab to view elasticsearch log entries using 
+          http://localhost:9200/logstash-index-2016.08/_search
+          
         **Note that you will need to use the correct yyyy.MM value in the index
         
         All the logs entries related to OBDSim service are now available on elasticsearch.
@@ -84,3 +87,4 @@
         >   Follow the setup instructions and start the kibana service.
         >   Open a new browser window and open kibana visualizer using http://localhost:5601/
         >   Kibana visualizer will initialize and open in default state
+        

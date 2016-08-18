@@ -2,5 +2,4 @@
 
 Prerequisites
 
-1. Download and install >> '.NET Core SDK for Windows' from https://www.microsoft.com/net/core#windows
-2. 
+Download and install >> '.NET Core SDK for Windows' from https://www.microsoft.com/net/core#windows

@@ -6,8 +6,10 @@ namespace OBDSim.Providers
 
     public class OBDSimProvider : IOBDSimProvider
     {
-        public List<OBDSimModel> GetOBDSims(int employeeId)
+        public List<OBDSimModel> GetOBDSims(int customerId)
         {
+            //simulating the model
+            //ToDo: work on generating the actual model
             List<OBDSimModel> l = new List<OBDSimModel>();
             for (int i = 0; i < 10; i++)
             {
@@ -15,7 +17,7 @@ namespace OBDSim.Providers
                 {
                     FromDate = DateTime.Today.AddDays(-i),
                     ToDate = DateTime.Today.AddDays(-i + 2),
-                    Reason = "Personal OBDSim"
+                    Reason = "OBDSim"
                 });
             }
             return l;

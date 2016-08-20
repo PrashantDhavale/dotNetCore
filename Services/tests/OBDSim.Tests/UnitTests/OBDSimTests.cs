@@ -33,7 +33,7 @@ namespace OBDSim.Tests.UnitTests
             var returnModel = Assert.IsType<List<OBDSimModel>>(okResult.Value);
         }
 
-        private List<OBDSimModel> GetTestOBDSims(int employeeId)
+        private List<OBDSimModel> GetTestOBDSims(int customerId)
         {
             List<OBDSimModel> l = new List<OBDSimModel>();
             for (int i = 0; i < 10; i++)
@@ -42,7 +42,7 @@ namespace OBDSim.Tests.UnitTests
                 {
                     FromDate = DateTime.Today.AddDays(-i),
                     ToDate = DateTime.Today.AddDays(-i + 2),
-                    Reason = "Test Personal OBDSim"
+                    Reason = "Test OBDSim"
                 });
             }
             return l;

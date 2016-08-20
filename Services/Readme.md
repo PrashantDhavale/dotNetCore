@@ -71,7 +71,7 @@
         Elasticsearch service will be available on http://localhost:9200/
         
     >>  You can now execute the OBDSim service API's using swagger or postman or just the browser
-        http://localhost:5000/api/OBDSim/GetOBDSimsByCustomerID/1234
+        http://localhost:5000/api/OBDSim/getOBDSims/1234
 
     >>  Use a new browser tab to view elasticsearch log entries using 
           http://localhost:9200/logstash-index-2016.08/_search

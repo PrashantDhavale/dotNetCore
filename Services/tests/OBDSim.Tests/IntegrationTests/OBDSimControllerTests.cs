@@ -24,7 +24,7 @@ namespace OBDSim.Tests.IntegrationTests
         }
 
         [Fact]
-        public async Task GetOBDSims_ReturnsOkForCorrectEmployeeId()
+        public async Task GetOBDSims_ReturnsOkForCorrectCustomerId()
         {
             // Arrange & Act
             var response = await _client.GetAsync("/api/OBDSim/1");
@@ -34,7 +34,7 @@ namespace OBDSim.Tests.IntegrationTests
         }
 
         [Fact]
-        public async Task GetOBDSims_ReturnsBadRequestForIncorrectEmployeeId()
+        public async Task GetOBDSims_ReturnsBadRequestForIncorrectCustomerId()
         {
             // Arrange & Act
             var response = await _client.GetAsync("/api/OBDSim/a123");

@@ -5,6 +5,6 @@ namespace OBDSim.Providers
 
     public interface IOBDSimProvider
     {
-        List<OBDSimModel> GetOBDSims(int employeeId);
+        List<OBDSimModel> GetOBDSims(int customerId);
     }
 }

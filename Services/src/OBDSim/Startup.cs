@@ -59,7 +59,7 @@ namespace OBDSim
                 {
                     Version = "v1",
                     Title = "OBDSim API",
-                    Description = "API's to get the OBDSim details of an employee",
+                    Description = "API's to get the OBDSim details of a customer",
                     TermsOfService = "None"
                 });
 

@@ -32,16 +32,16 @@ namespace OBDSim.Controllers
         #region Methods
 
         [HttpGet]
-        [Route("obdsim/{employeeId}", Name = "getOBDSims")]
+        [Route("obdsim/{customerId}", Name = "getOBDSims")]
         [ProducesResponseType(typeof(List<OBDSimModel>), 200)]
-        public ActionResult GetOBDSims(int employeeId)
+        public ActionResult GetOBDSims(int customerId)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _logger.LogInformation("Invoking Provider GetOBDSims method with {0}", employeeId);
-                    var OBDSimModel = _obdSimProvider.GetOBDSims(employeeId);
+                    _logger.LogInformation("Invoking Provider GetOBDSims method with {0}", customerId);
+                    var OBDSimModel = _obdSimProvider.GetOBDSims(customerId);
                     return Ok(OBDSimModel);
                 }
                 return BadRequest(ModelState);
